@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container"></div>
+    <div id="navigation">
+        <button id="prev-btn" onclick="showPreviousQuestion()">Previous</button>
+        <button id="next-btn" onclick="showNextQuestion()">Next</button>
+        <button id="submit-btn" onclick="submitQuiz()" style="display: none;">Submit</button>
+    </div>
+
+    <!-- modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Quiz Result</h2>
+      <p id="score-text"></p>
+      <p id="level-text"></p>
+    </div>
+  </div>
+
+  
+    <script src="javascript.js"></script>
+</body>
+</html>
